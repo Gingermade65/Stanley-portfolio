@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stanley Offordile | Senior Full-Stack Developer Portfolio</title>
+
+    <!-- Meta Descriptions -->
+    <meta
+      name="description"
+      content="Portfolio of Stanley Offordile, a Full-Stack Web Developer specializing in building modern, performant, and responsive web applications."
+    />
+    <meta name="author" content="Stanley Offordile" />
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Ambient Glowing Background Orbs -->
+    <div class="glow-orb" style="top: -50px; left: -50px"></div>
+    <div class="glow-orb" style="top: 40%; right: -100px"></div>
+
+    <!-- ==========================================================================
+       NAVBAR
+       ========================================================================== -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <div class="logo-box">SO</div>
+          <span>Stanley<span style="color: var(--accent)">.dev</span></span>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark/light theme"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a
+            href="#contact"
+            class="btn btn-primary"
+            style="padding: 0.65rem 1.25rem; font-size: 0.875rem"
+            >Let's Talk</a
+          >
+          <div
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+    <section class="hero section" id="home">
+      <div class="container grid hero-grid">
+        <div class="hero-content fade-in">
+          <div class="badge-availability">
+            <span class="status-dot"></span>
+            Available for Opportunities
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Stanley Offordile</span>
+          </h1>
+          <div class="typing-container">
+            I build <span class="typed-text" id="typed-text"></span
+            ><span class="cursor">&nbsp;</span>
+          </div>
+          <p class="hero-description">
+            Full-Stack Web Developer specializing in crafting high-performance,
+            responsive web applications with clean architecture, intuitive UI/UX
+            design, and scalable code bases.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"
+              ><i class="fa-solid fa-code"></i> View My Work</a
+            >
+            <a href="#contact" class="btn btn-secondary"
+              ><i class="fa-regular fa-envelope"></i> Contact Me</a
+            >
+            <div class="social-links">
+              <a
+                href="https://github.com/Gingermade65"
+                target="_blank"
+                rel="noopener"
+                class="social-btn"
+                aria-label="GitHub Profile"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                class="social-btn"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+
+              <a
+                href="https://wa.me/2348124810620"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                aria-label="WhatsApp"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Configurable Stats Row -->
+          <div class="grid stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">10<span>+</span></div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12<span>+</span></div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2<span>+</span></div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Graphic / Placeholder -->
+        <div class="hero-image-wrapper fade-in">
+          <div class="hero-image-card">
+            <div class="hero-avatar-placeholder">
+             <img src="images/Portrait.jpg" alt="My profile photo">
+              <span
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  color: var(--text-primary);
+                "
+                >FULL-STACK DEV</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-tag">
+            <i class="fa-regular fa-user"></i> About Me
+          </div>
+          <h2 class="section-title">Driven by Quality & Code Excellence</h2>
+          <p class="section-subtitle">
+            A brief overview of my engineering background and approach to
+            software craft.
+          </p>
+        </div>
+
+        <div class="grid about-grid">
+          <div class="glass-card about-content fade-in">
+            <p>
+              I am a full-stack developer passionate about building reliable
+              software that solves real human problems. My core focus spans
+              modern client-side architectures, robust server-side processing,
+              and seamless API integrations.
+            </p>
+            <p>
+              Whether designing a custom interactive dashboard, scaling a
+              database structure, or optimizing responsive web performance, I
+              emphasize clean abstractions, maintainability, and accessibility.
+            </p>
+
+            <div class="philosophy-card">
+              "Simplicity and consistency are the hallmarks of great software.
+              Write code for humans first, machines second."
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+              <!-- Local PDF placeholder link -->
+              <a href="sample-cv.pdf" download class="btn btn-outline"
+                ><i class="fa-solid fa-download"></i> Download CV</a
+              >
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="about-highlights fade-in">
+            <div class="glass-card highlight-item">
+              <i class="fa-solid fa-layer-group"></i>
+              <div>
+                <h4>Full-Stack Mastery</h4>
+                <p>
+                  End-to-end web application engineering from database schemas
+                  to interactive interfaces.
+                </p>
+              </div>
+            </div>
+            <div class="glass-card highlight-item">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div>
+                <h4>Performance Optimization</h4>
+                <p>
+                  Fast page load times, optimized asset handling, and responsive
+                  rendering benchmarks.
+                </p>
+              </div>
+            </div>
+            <div class="glass-card highlight-item">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <div>
+                <h4>Responsive First</h4>
+                <p>
+                  Adaptive UI design ensuring seamless functionality across
+                  screen sizes.
+                </p>
+              </div>
+            </div>
+            <div class="glass-card highlight-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <h4>Clean Security</h4>
+                <p>
+                  Proper client validation, secure RESTful endpoint standards,
+                  and structured workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       TECHNICAL SKILLS SECTION
+       ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-tag">
+            <i class="fa-solid fa-microchip"></i> Technical Skills
+          </div>
+          <h2 class="section-title">My Tech Stack & Capabilities</h2>
+          <p class="section-subtitle">
+            Categorized skills and core technologies I work with regularly.
+          </p>
+        </div>
+
+        <div class="grid skills-grid">
+          <!-- Frontend Skills -->
+          <div class="glass-card fade-in">
+            <div class="skill-category-title">
+              <i class="fa-brands fa-html5"></i> Frontend Development
+            </div>
+            <div class="skill-items">
+              <div class="skill-badge">
+                <i class="fa-brands fa-html5"></i> HTML5
+              </div>
+              <div class="skill-badge">
+                <i class="fa-brands fa-css3-alt"></i> CSS3 / Modern Flex/Grid
+              </div>
+              <div class="skill-badge">
+                <i class="fa-brands fa-js"></i> JavaScript (ES6+)
+              </div>
+              <div class="skill-badge">
+                <i class="fa-brands fa-react"></i> React.js
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="glass-card fade-in">
+            <div class="skill-category-title">
+              <i class="fa-solid fa-server"></i> Backend Engineering
+            </div>
+            <div class="skill-items">
+              <div class="skill-badge">
+                <i class="fa-brands fa-php"></i> PHP
+              </div>
+              <div class="skill-badge">
+                <i class="fa-brands fa-laravel"></i> Laravel Framework
+              </div>
+              <div class="skill-badge">
+                <i class="fa-brands fa-node-js"></i> Node.js Basics
+              </div>
+              <div class="skill-badge">
+                <i class="fa-solid fa-network-wired"></i> REST APIs
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Skills -->
+          <div class="glass-card fade-in">
+            <div class="skill-category-title">
+              <i class="fa-solid fa-database"></i> Database & Storage
+            </div>
+            <div class="skill-items">
+              <div class="skill-badge">
+                <i class="fa-solid fa-database"></i> MySQL
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Utilities -->
+          <div class="glass-card fade-in">
+            <div class="skill-category-title">
+              <i class="fa-solid fa-wrench"></i> Workflow & Tools
+            </div>
+            <div class="skill-items">
+              <div class="skill-badge">
+                <i class="fa-brands fa-git-alt"></i> Git
+              </div>
+              <div class="skill-badge">
+                <i class="fa-brands fa-github"></i> GitHub
+              </div>
+              <div class="skill-badge">
+                <i class="fa-solid fa-code"></i> VS Code
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       FEATURED PROJECTS SECTION
+       ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-tag">
+            <i class="fa-solid fa-folder-open"></i> Portfolio
+          </div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Selected web applications, tools, and full-stack solutions.
+          </p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filters fade-in">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn" data-filter="frontend">Frontend UI</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid projects-grid">
+          <!-- Project 1: E-Commerce -->
+          <div
+            class="glass-card project-card fade-in"
+            data-category="ecommerce fullstack"
+          >
+            <div class="project-image">
+              <div class="project-visual">
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="font-size: 3.5rem"
+                ></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Aura Modern E-Commerce Platform</h3>
+              <p class="project-description">
+                A complete online store feature set with product catalog
+                filtering, cart management, checkout workflow, and responsive
+                mobile storefront.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Student Management System -->
+          <div
+            class="glass-card project-card fade-in"
+            data-category="fullstack"
+          >
+            <div class="project-image">
+              <div class="project-visual">
+                <i
+                  class="fa-solid fa-graduation-cap"
+                  style="font-size: 3.5rem"
+                ></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">EduPortal Management System</h3>
+              <p class="project-description">
+                Web portal for tracking student enrollment, course progress,
+                grading, and administrative data with secure role-based
+                controls.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Modern Portfolio Website -->
+          <div class="glass-card project-card fade-in" data-category="frontend">
+            <div class="project-image">
+              <div class="project-visual">
+                <i
+                  class="fa-solid fa-address-card"
+                  style="font-size: 3.5rem"
+                ></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Developer Portfolio Template</h3>
+              <p class="project-description">
+                Lightweight, responsive single-page developer portfolio with
+                dark/light themes, mailto client integration, and fluid layout.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 Grid</span>
+                <span class="tech-tag">Vanilla JS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Business Service Platform -->
+          <div
+            class="glass-card project-card fade-in"
+            data-category="frontend fullstack"
+          >
+            <div class="project-image">
+              <div class="project-visual">
+                <i class="fa-solid fa-chart-line" style="font-size: 3.5rem"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Nexus Corporate SaaS Landing</h3>
+              <p class="project-description">
+                High-conversion service landing page with pricing calculator,
+                user interactive tabs, contact forms, and clean branding
+                styling.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Animations</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-tag">
+            <i class="fa-solid fa-briefcase"></i> Services Offered
+          </div>
+          <h2 class="section-title">How I Can Help Your Business</h2>
+          <p class="section-subtitle">
+            Custom web development solutions tailored to your project goals.
+          </p>
+        </div>
+
+        <div class="grid services-grid">
+          <div class="glass-card fade-in">
+            <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3 class="service-title">Responsive Website Dev</h3>
+            <p class="service-desc">
+              Designing & building custom websites that look crisp and function
+              smoothly on mobile devices, tablets, and desktop displays.
+            </p>
+          </div>
+
+          <div class="glass-card fade-in">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="service-title">Frontend UI Engineering</h3>
+            <p class="service-desc">
+              Creating modern, accessible interactive interfaces with clean
+              HTML, CSS animations, and modular JavaScript algorithms.
+            </p>
+          </div>
+
+          <div class="glass-card fade-in">
+            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 class="service-title">Full-Stack Web Apps</h3>
+            <p class="service-desc">
+              End-to-end development integrating dynamic frontend views with
+              secure PHP/Laravel server endpoints and MySQL databases.
+            </p>
+          </div>
+
+          <div class="glass-card fade-in">
+            <div class="service-icon"><i class="fa-solid fa-store"></i></div>
+            <h3 class="service-title">E-Commerce Solutions</h3>
+            <p class="service-desc">
+              Custom online store systems with structured product catalogs,
+              simple shopping carts, and intuitive ordering flows.
+            </p>
+          </div>
+
+          <div class="glass-card fade-in">
+            <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3 class="service-title">Maintenance & Tuning</h3>
+            <p class="service-desc">
+              Performance auditing, code cleanup, SEO optimizations, and bug
+              resolution for existing web application installations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       WORK PROCESS SECTION
+       ========================================================================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-tag">
+            <i class="fa-solid fa-diagram-project"></i> Workflow
+          </div>
+          <h2 class="section-title">My Development Process</h2>
+          <p class="section-subtitle">
+            A structured four-step path to taking ideas from concept to live
+            deployment.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step fade-in">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Discovery</h3>
+            <p class="step-desc">
+              Analyzing project requirements, defining tech stack, and mapping
+              application goals.
+            </p>
+          </div>
+
+          <div class="process-step fade-in">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Design & Dev</h3>
+            <p class="step-desc">
+              Wireframing, crafting responsive frontend layouts, and engineering
+              backend data structures.
+            </p>
+          </div>
+
+          <div class="process-step fade-in">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Testing</h3>
+            <p class="step-desc">
+              Conducting cross-browser testing, input validation checks, and
+              performance optimization.
+            </p>
+          </div>
+
+          <div class="process-step fade-in">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Delivery</h3>
+            <p class="step-desc">
+              Final code review, deployment handoff, and ongoing support
+              documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-tag">
+            <i class="fa-regular fa-paper-plane"></i> Contact
+          </div>
+          <h2 class="section-title">Let's Discuss Your Project</h2>
+          <p class="section-subtitle">
+            Have a project in mind or an open role? Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="grid contact-grid">
+          <!-- Direct Contact Information -->
+          <div class="contact-info-card fade-in">
+            <div class="glass-card">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email Me</h4>
+                </div>
+              </div>
+
+              <!-- Copy Email Clipboard Utility -->
+              <div class="copy-email-box">
+                <span class="copy-email-text" id="email-value"
+                  >stanleyaugustine422@gmail.com</span
+                >
+                <button
+                  class="btn btn-secondary"
+                  id="copy-email-btn"
+                  style="padding: 0.4rem 0.8rem; font-size: 0.8rem"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="glass-card">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <p>Available Worldwide / Remote</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card">
+              <h4
+                style="
+                  margin-bottom: 1rem;
+                  color: var(--text-muted);
+                  font-size: 0.85rem;
+                  text-transform: uppercase;
+                "
+              >
+                Connect Elsewhere
+              </h4>
+              <div class="social-links">
+                <a
+                  href="https://github.com/Gingermade65"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-btn"
+                  aria-label="GitHub Profile"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-btn"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a
+                  href="https://wa.me/2348124810620"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="WhatsApp"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Email Contact Card -->
+          <div class="glass-card fade-in email-contact-card">
+            <div class="email-contact-content">
+              <div class="email-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+
+              <h3>Let's Talk About Your Project</h3>
+
+              <p>
+                Have a project in mind, a job opportunity, or a question? I'd
+                love to hear from you. Send me an email and let's discuss how we
+                can work together.
+              </p>
+
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=stanleyaugustine422%40gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary email-contact-btn"
+              >
+                <i class="fa-regular fa-paper-plane"></i>
+                Compose an Email
+              </a>
+
+              <div class="email-contact-divider">
+                <span>OR EMAIL ME DIRECTLY</span>
+              </div>
+
+              <a
+                href="mailto:stanleyaugustine422@gmail.com"
+                class="email-direct-link"
+              >
+                stanleyaugustine422@gmail.com
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <p class="email-contact-note">
+                <i class="fa-solid fa-shield-halved"></i>
+                No forms, no hassle. Just a direct conversation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <div class="logo-box">SO</div>
+              <span>Stanley<span style="color: var(--accent)">.dev</span></span>
+            </a>
+            <p>
+              Building functional, accessible, and high-performance web
+              applications with modern standard technologies.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Quick Links</h4>
+            <div class="footer-links">
+              <a href="#home" class="footer-link">Home</a>
+              <a href="#about" class="footer-link">About</a>
+              <a href="#skills" class="footer-link">Skills</a>
+              <a href="#projects" class="footer-link">Projects</a>
+              <a href="#contact" class="footer-link">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <div class="footer-links">
+              <a href="#services" class="footer-link">Responsive Web Dev</a>
+              <a href="#services" class="footer-link">Frontend UI Design</a>
+              <a href="#services" class="footer-link">Full-Stack Web Apps</a>
+              <a href="#services" class="footer-link">E-Commerce Systems</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year"></span> Stanley Offordile. All rights
+            reserved.
+          </p>
+          <p>Designed with Clean HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <a
+      href="#home"
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Back to top of page"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Toast Banner Popup -->
+    <div class="toast" id="toast">
+      <i class="fa-solid fa-circle-check" style="color: var(--accent)"></i>
+      <span id="toast-message">Notification message</span>
+    </div>
+
+    <!-- ==========================================================================
+       VANILLA JAVASCRIPT LOGIC
+       ========================================================================== -->
+   
+    <script src="./script.js"></script>
+
+  </body>
+</html>
