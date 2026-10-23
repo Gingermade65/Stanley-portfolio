@@ -29,25 +29,34 @@
         /* ----------------------------------------------------------------------
                2. MOBILE HAMBURGER MENU ACCESSIBLE INTERACTION
                ---------------------------------------------------------------------- */
-        const hamburger = document.getElementById("hamburger");
-        const navMenu = document.getElementById("nav-menu");
-        const navLinks = document.querySelectorAll(".nav-link");
+      
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
 
-        function toggleMenu() {
-          hamburger.classList.toggle("is-active");
-          navMenu.classList.toggle("is-active");
-        }
+if (hamburger && navMenu) {
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevents click from bubbling up
+    hamburger.classList.toggle('is-active');
+    navMenu.classList.toggle('is-open');
+  });
 
-        hamburger.addEventListener("click", toggleMenu);
+  // Close menu when clicking outside of it
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      hamburger.classList.remove('is-active');
+      navMenu.classList.remove('is-open');
+    }
+  });
 
-        // Close menu on selecting a link
-        navLinks.forEach((link) => {
-          link.addEventListener("click", () => {
-            if (navMenu.classList.contains("is-active")) {
-              toggleMenu();
-            }
-          });
-        });
+  // Close menu when a navigation link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('is-active');
+      navMenu.classList.remove('is-open');
+    });
+  });
+}
 
         /* ----------------------------------------------------------------------
                3. STICKY NAVBAR & BACK-TO-TOP OBSERVER
