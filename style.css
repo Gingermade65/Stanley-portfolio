@@ -1221,3 +1221,14 @@
     transform: translateY(-4px);
     background-color: var(--accent-light);
   }
+
+  @media (max-width: 768px) {
+  .logo {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .logo-box {
+    font-size: 0.85rem;
+  }
+}
