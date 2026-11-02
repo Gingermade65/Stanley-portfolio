@@ -1232,3 +1232,11 @@
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(1.1rem, 4.5vw, 1.6rem);
+    white-space: nowrap;
+    letter-spacing: -0.04em;
+  }
+}
